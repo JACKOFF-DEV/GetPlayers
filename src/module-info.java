@@ -1,0 +1,9 @@
+/**
+ * 
+ */
+/**
+ * 
+ */
+module TestPlugin {
+	requires craftbukkit;
+}

@@ -1,0 +1,9 @@
+name: Cocks
+version: 1.0
+author: PaulTaranto
+main: com.paultaranto.Main
+
+commands:
+  online:
+    usage: /<command> <clear | remove> [player]
+    description: Main command.
