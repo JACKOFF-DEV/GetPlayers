@@ -1,7 +1,7 @@
-name: Cocks
-version: 1.0
+name: Player Info
+version: 0.1.1
 author: PaulTaranto
-main: com.paultaranto.TestPlugin
+main: com.paultaranto.PlayerInfoPlugin
 
 commands:
   online:
