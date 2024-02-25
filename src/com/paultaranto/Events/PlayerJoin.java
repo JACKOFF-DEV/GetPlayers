@@ -19,7 +19,7 @@ public class PlayerJoin extends PlayerListener
 		var onlinePlayers = event.getPlayer().getServer().getOnlinePlayers(); 
 		for(var player : onlinePlayers) 
 		{ 
-			playerNames.add(((Player)player).getDisplayName()); 
+			playerNames.add(((Player)player).getName()); 
 		}
   
 		var jsonObj = new JSONObject(); 
@@ -31,7 +31,7 @@ public class PlayerJoin extends PlayerListener
   
 		try 
 		{ 
-			var fileWriter = new FileWriter("./cocks.json");
+			var fileWriter = new FileWriter("./player-info.json");
 			fileWriter.write(jsonObj.toJSONString());
 	  
 			fileWriter.flush(); 
@@ -53,7 +53,7 @@ public class PlayerJoin extends PlayerListener
 				continue;
 			}
 			
-			playerNames.add(((Player)player).getDisplayName()); 
+			playerNames.add(((Player)player).getName()); 
 		}
 	  
 	    var jsonObj = new JSONObject(); 
@@ -65,7 +65,7 @@ public class PlayerJoin extends PlayerListener
 	    
 	    try 
 	    { 
-		    var fileWriter = new FileWriter("./cocks.json");
+		    var fileWriter = new FileWriter("./player-info.json");
 		    fileWriter.write(jsonObj.toJSONString());
 	  
 		    fileWriter.flush(); 
