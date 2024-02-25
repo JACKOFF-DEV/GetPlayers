@@ -5,13 +5,19 @@ import java.io.IOException;
 import java.util.ArrayList;
 
 import org.bukkit.entity.Player;
-import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerJoinEvent;
+import org.bukkit.event.player.*;
+import org.bukkit.event.Listener;
+import org.bukkit.plugin.java.JavaPlugin;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 
-public class PlayerJoin implements Listener 
+import com.paultaranto.TestPlugin;
+
+public class PlayerJoin extends PlayerListener
 {	
+
+	@Override
 	public void onPlayerJoin(PlayerJoinEvent event)
 	{	
 		event.setJoinMessage("Cocs");

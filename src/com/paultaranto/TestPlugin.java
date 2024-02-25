@@ -6,11 +6,11 @@ import org.bukkit.event.Listener;
 import org.bukkit.plugin.java.JavaPlugin;
 
 import com.paultaranto.commands.GetPlayers;
-import com.paultaranto.Events.*;
+import com.paultaranto.Events.PlayerJoin;
 
-public class Main extends JavaPlugin
+public class TestPlugin extends JavaPlugin
 {
-	public static Main instance;
+	public static TestPlugin instance;
 	
 	@Override
 	public void onDisable() {
@@ -36,7 +36,7 @@ public class Main extends JavaPlugin
 		this.getServer().getPluginManager().registerEvent(Type.PLAYER_JOIN, (Listener)new PlayerJoin(), Priority.Highest, this);
 	}
 	
-	public static Main getInstance()
+	public static TestPlugin getInstance()
 	{
 		return instance;
 	}

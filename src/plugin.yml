@@ -1,9 +1,9 @@
 name: Cocks
 version: 1.0
 author: PaulTaranto
-main: com.paultaranto.Main
+main: com.paultaranto.TestPlugin
 
 commands:
   online:
-    usage: /<command> <clear | remove> [player]
-    description: Main command.
+    usage: /<command>
+    description: Get all online players
