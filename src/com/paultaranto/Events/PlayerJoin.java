@@ -75,4 +75,24 @@ public class PlayerJoin extends PlayerListener
 	    {   
 	    }
 	}
+	
+	@Override
+	public void onPlayerFish(PlayerFishEvent event)
+	{
+		var phrases = new ArrayList<String>();
+		phrases.add("Oh boy I sure do love fishing");
+		phrases.add("The worst day fishing is better than the best day mining");
+		phrases.add("Hey guys, I'm fishing");
+		
+		int min = 1;
+		int max = 50;
+		int randomNum = (int)(Math.random() * (max - min + 1)) + min;
+		if (randomNum == Math.round(max / 2))
+		{
+			min = 0;
+			max = phrases.size();
+			randomNum = (int)(Math.random() * (max - min + 1)) + min;
+			event.getPlayer().chat(phrases.get(randomNum));
+		}
+	}
 }

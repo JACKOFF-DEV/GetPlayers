@@ -35,7 +35,7 @@ public class TestPlugin extends JavaPlugin
 	{
 		this.getServer().getPluginManager().registerEvent(Type.PLAYER_JOIN, (Listener)new PlayerJoin(), Priority.Highest, this);
 		this.getServer().getPluginManager().registerEvent(Type.PLAYER_QUIT, (Listener)new PlayerJoin(), Priority.Highest, this);
-
+		this.getServer().getPluginManager().registerEvent(Type.PLAYER_FISH, (Listener)new PlayerJoin(), Priority.Highest, this);
 	}
 	
 	public static TestPlugin getInstance()
